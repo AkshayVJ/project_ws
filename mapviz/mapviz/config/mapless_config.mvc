@@ -1,0 +1,114 @@
+capture_directory: "~"
+fixed_frame: map
+target_frame: map
+fix_orientation: false
+rotate_90: false
+enable_antialiasing: true
+show_displays: true
+show_status_bar: true
+show_capture_tools: true
+window_width: 1846
+window_height: 787
+view_scale: 0.05841148
+offset_x: 0
+offset_y: 0
+background: "#a0a0a4"
+displays:
+  - type: mapviz_plugins/tile_map
+    name: new display
+    config:
+      visible: true
+      collapsed: false
+      custom_sources:
+        - base_url: http://localhost:8080/wmts/gm_layer/gm_grid/{level}/{x}/{y}.png
+          max_zoom: 19
+          name: Google 19
+          type: wmts
+      bing_api_key: ""
+      source: Google 19
+  - type: mapviz_plugins/point_click_publisher
+    name: new display
+    config:
+      visible: true
+      collapsed: false
+      topic: clicked_map_point
+      output_frame: odom
+  - type: mapviz_plugins/odometry
+    name: new display
+    config:
+      visible: true
+      collapsed: true
+      topic: /final_filtered_odom
+      color: "#73d216"
+      draw_style: points
+      position_tolerance: 0
+      buffer_size: 0
+      show_laps: false
+      show_covariance: false
+      show_all_covariances: false
+      static_arrow_sizes: false
+      arrow_size: 25
+      use_latest_transforms: false
+      show_timestamps: 0
+  - type: mapviz_plugins/navsat
+    name: new display
+    config:
+      visible: true
+      collapsed: true
+      topic: /navsat/fix
+      color: "#cc0000"
+      draw_style: points
+      use_latest_transforms: false
+      position_tolerance: 1
+      buffer_size: 0
+  - type: mapviz_plugins/odometry
+    name: new display
+    config:
+      visible: true
+      collapsed: true
+      topic: /husky_velocity_controller/odom
+      color: "#204a87"
+      draw_style: lines
+      position_tolerance: 0
+      buffer_size: 0
+      show_laps: false
+      show_covariance: false
+      show_all_covariances: false
+      static_arrow_sizes: false
+      arrow_size: 25
+      use_latest_transforms: false
+      show_timestamps: 0
+  - type: mapviz_plugins/odometry
+    name: new display
+    config:
+      visible: true
+      collapsed: true
+      topic: /odometry/filtered_global_straight
+      color: "#f57900"
+      draw_style: lines
+      position_tolerance: 0
+      buffer_size: 0
+      show_laps: false
+      show_covariance: false
+      show_all_covariances: false
+      static_arrow_sizes: false
+      arrow_size: 25
+      use_latest_transforms: false
+      show_timestamps: 0
+  - type: mapviz_plugins/odometry
+    name: new display
+    config:
+      visible: true
+      collapsed: true
+      topic: /odometry/filtered_global_curve
+      color: "#edd400"
+      draw_style: lines
+      position_tolerance: 0
+      buffer_size: 0
+      show_laps: false
+      show_covariance: false
+      show_all_covariances: false
+      static_arrow_sizes: false
+      arrow_size: 25
+      use_latest_transforms: false
+      show_timestamps: 0

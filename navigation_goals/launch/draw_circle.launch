@@ -1,0 +1,3 @@
+<launch>
+<node pkg="navigation_goals" type="draw_circle.py" name="draw_circle" output="screen"/>
+</launch>

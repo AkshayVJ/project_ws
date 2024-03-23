@@ -1,0 +1,3 @@
+<launch>
+<node pkg="navigation_goals" type="simple_navigation_goals.py" name="simple_navigation_goals" output="screen"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+<node pkg="navigation_goals" type="draw_square.py" name="draw_square" output="screen"/>
+</launch>

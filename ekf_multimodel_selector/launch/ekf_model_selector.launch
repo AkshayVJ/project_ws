@@ -1,0 +1,3 @@
+<launch>
+<node pkg="ekf_multimodel_selector" type="ekf_model_selector.py" name="ekf_model_selector" output="screen"/>
+</launch>
