@@ -8,6 +8,9 @@ $ roslaunch husky_gazebo husky_playpen.launch
 
 $ roslaunch husky_control teleop_keyboard.launch
 // For running teleop Keyboard
+
+$ roslaunch husky_viz husky_display.launch
+// For running rviz to visualize the robot model
 ```
 ### 2. Map Generation( SLAM Gmapping) :
 ```bash
