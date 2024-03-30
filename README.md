@@ -32,7 +32,7 @@ $ roslaunch husky_navigation map_saver.launch map_name:=<give_your_map_name>
 $ roslaunch husky_gazebo husky_playpen.launch
 
 $ roslaunch husky_navigation amcl_navigation.launch
-// For running amcl for autonomous navigation
+// For running amcl to navigate autonomously
 
 $ roslaunch husky_viz husky_navigation.launch
 // For running rviz to visualize the autonomous navigation
