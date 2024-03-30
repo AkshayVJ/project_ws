@@ -27,5 +27,17 @@ $ roslaunch husky_viz husky_mapping.launch
 $ roslaunch husky_navigation map_saver.launch map_name:=<give_your_map_name>
 // For saving the generated map
 ```
+### 3. Autonomous Navigation :
+```bash
+$ roslaunch husky_gazebo husky_playpen.launch
+
+$ roslaunch husky_navigation amcl_navigation.launch
+// For running amcl for autonomous navigation
+
+$ roslaunch husky_viz husky_navigation.launch
+// For running rviz to visualize the autonomous navigation
+
+```
+
 
 ## Outdoor Navigation (GPS Based)
