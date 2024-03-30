@@ -3,9 +3,6 @@
 ## Indoor Navigation (Map Based)
 ### 1. Manual Keyboard Teleoperation:
 ```bash
-$ roslaunch husky_gazebo husky_playpen.launch
-// For running gazebo world
-
 $ roslaunch husky_control teleop_keyboard.launch
 // For running teleop Keyboard
 ```
